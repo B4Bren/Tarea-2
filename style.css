@@ -1,0 +1,92 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    }
+header {
+    background-color: #377DBD;
+    padding-top: 24px;
+    padding-bottom: 8px;
+    text-align: center;
+    margin-bottom: 0;
+}
+header a{
+    color: #fff;
+}
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #377DBD;
+}
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #377DBD;
+}
+h3 {
+  font-size: 1.125em;  
+  font-weight: 600;
+  word-spacing: 0.1em;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 0;
+}
+p {
+    font-size: 1em;
+    color: #21364C;
+}
+.Cuerpo {
+    margin-left: 20%;
+    margin-right: 20%;
+    border-width: 1px;
+    border-color: black;
+    background-color: #E5E5E5;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 3%;
+}
+.Detalle {
+    color: #6A0F30 ; 
+    font-family: montserrat, sans-serif;
+    text-transform: capitalize;
+    font-weight: 1000;
+    
+}
+footer {
+    background-color: #377DBD;
+    margin-top: 0;
+    padding: 8px;
+}
+footer>p{
+    color: #fff;
+    padding:4px;
+}
+ul {
+    list-style-type: none;
+    padding: 24px;
+    background-color: #8DB0D0;
+    border-radius: 50%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+li{
+    padding-bottom: 4px;
+}
+
+li i {
+    color: #6A0F30;
+    padding-right: 8px;
+}
+li a:link {
+    color: #21364C ;
+}
+li a:hover {
+    color: #131D26;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+li a:visited {
+    color: #6A0F30;
+}
+
+
+
