@@ -5,31 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarea 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6340404278.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
         <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80" alt="imagen con formas rectangulos tridimensionales con diferentes logos de redes sociales (instagram, twitter, netflix, tik tok, figma, spotify" width="200px">
-        <div>
-            <p><a href="#">HTML</a> | <a href="#">CSS</a> | <a href="#">JavaScript</a></p>
-        </div>
+        <h3><a href="#">HTML</a> | <a href="#">CSS</a> | <a href="#">JavaScript</a></h3>
+       
        
     </header>
-    <div>
+    <div class="Cuerpo">
         <h1>Tarea 2</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex <samp style="color: red;">commodo consequat.</samp> </p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex <samp class="Detalle">commodo consequat.</samp> </p>
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
-    <div>
-        <ul>
-            <li><a href="https://es-la.facebook.com/">Facebook</a></li>
-            <li><a href="http://www.instagram.com/">Instagram</a></li>
-            <li><a href="https://twitter.com/?lang=es">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-        </ul>
+        <div class="SeccionR">
+            <H2>Lista de algunas Redes Sociales</H2>
+            <ul class="Redes">
+                <li><a href="https://es-la.facebook.com/"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+                <li><a href="http://www.instagram.com/"><i class="fab fa-instagram-square"></i> Instagram</a></li>
+                <li><a href="https://twitter.com/?lang=es"><i class="fab fa-twitter-square"></i> Twitter</a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="calculadora">
+            <button id="bCalculadora"><i class="fas fa-calculator"></i>Ver Calculadora</button>
+            <div id="operacion">
+                <input type="number" placeholder="Number 1" id="num1">
+                <br>
+                <input type="number" placeholder="Number 2" id="num2">
+                <br>
+                <button id="add"><i class="fas fa-plus"></i></button>
+                <button id="sub"><i class="fas fa-minus"></i></button>
+                <button id="mul"><i class="fas fa-times"></i></button>
+                <br>
+                <input type="number" readonly id="result">
+                <p>El resultado de la operacion es: <span><p id="resultado"></p></span></p>
+            </div>
+        </div>
     </div>
     <footer>
-        <p style="background: black; color: white;">Hecho por Brenda Villalobos Arias</p>
+        <p>Hecho por Brenda Villalobos Arias</p>
     </footer>
+    <script src="js/calculadora.js"></script>
 </body>
 </html>
