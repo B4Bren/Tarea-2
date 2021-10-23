@@ -13,41 +13,27 @@ btn.onclick = function toggleSelection(){
         
     }else{
         targetDiv.style.display = "block";
-        document.getElementById("bCalculadora").innerHTML;
+        document.getElementById("bCalculadora").innerHTML = ocultar calculadora;
     }
 };
 
 
 document.getElementById("add").addEventListener("click", function sumar () {
     res.value = parseInt(n1.value) + parseInt(n2.value);
-    //document.getElementById("resultado").innerHTML = res.value;
+    document.getElementById("resultado").innerHTML = res.value;
 });
 
 document.getElementById("sub").addEventListener("click", function restar () {
     res.value = parseInt(n1.value) - parseInt(n2.value);
-    //document.getElementById("resultado").innerHTML = res.value;
+    document.getElementById("resultado").innerHTML = res.value;
 });
 
 document.getElementById("mul").addEventListener("click", function multiplicar() {
     res.value = parseInt(n1.value) * parseInt(n2.value);
-    //document.getElementById("resultado").innerHTML = res.value;
+    document.getElementById("resultado").innerHTML = res.value;
+    
 });
 
 
-function validarVacios() {
-        if(!isNaN(n1 || n2)) {
-             function imprimirMensaje(res){
-                document.getElementById("resultado").innerHTML = res.value;
-             };
-        } else {
-            document.getElementById('resultado').textContent = "Debe ingresar valores numericos";
-            }
-        };
-    
-/*var total = document.getElementById("resultado");
-total.textContent = tot;
 
-function imprimirmensaje() {
-    document.getElementById("resultado").innerHTML = res.value;
     
-}*/
