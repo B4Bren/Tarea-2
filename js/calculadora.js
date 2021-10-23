@@ -10,43 +10,44 @@ var cta = res.textContent;
 btn.onclick = function toggleSelection(){
     if (targetDiv.style.display != "none"){
         targetDiv.style.display = "none";
+        
     }else{
         targetDiv.style.display = "block";
-        //cta.textContent = <p>Ocultar calculadora</p>;
+        document.getElementById("bCalculadora").innerHTML;
     }
 };
 
 
-
-function validarVacios(num1) {
-        if(!isNaN(num1)) {
-            imprimirMensaje(res);
-        } else {
-            document.getElementById('resultado').textContent = "Debe ingresar valores numericos";
-        }
-    };
-
-
-
 document.getElementById("add").addEventListener("click", function sumar () {
     res.value = parseInt(n1.value) + parseInt(n2.value);
+    //document.getElementById("resultado").innerHTML = res.value;
 });
 
 document.getElementById("sub").addEventListener("click", function restar () {
     res.value = parseInt(n1.value) - parseInt(n2.value);
+    //document.getElementById("resultado").innerHTML = res.value;
 });
 
 document.getElementById("mul").addEventListener("click", function multiplicar() {
     res.value = parseInt(n1.value) * parseInt(n2.value);
+    //document.getElementById("resultado").innerHTML = res.value;
 });
 
-function validarVacios(res) {
-        if(!isNaN(res)) {
-            imprimirMensaje(res);
-        } else {
-            document.getElementById('resultado').textContent = "Debe ingresar valores numericos";
-        }
-    }
+
+function validarVacios() {
+        if(!isNaN(n1 || n2)) {
+             function imprimirMensaje(res){
+                document.getElementById("resultado").innerHTML = res.value;
+             };
+        } else {
+            document.getElementById('resultado').textContent = "Debe ingresar valores numericos";
+            }
+        };
     
-var total = document.getElementById("resultado");
+/*var total = document.getElementById("resultado");
 total.textContent = tot;
+
+function imprimirmensaje() {
+    document.getElementById("resultado").innerHTML = res.value;
+    
+}*/
